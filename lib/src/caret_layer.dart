@@ -6,6 +6,7 @@ import 'infrastructure/blink_controller.dart';
 import 'text_layout.dart';
 
 class TextLayoutCaret extends StatefulWidget {
+  
   const TextLayoutCaret({
     Key? key,
     required this.textLayout,
