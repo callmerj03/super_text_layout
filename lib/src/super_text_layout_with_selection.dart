@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:super_text_layout/super_text_layout_logging.dart';
 
@@ -179,6 +180,7 @@ class _RebuildOptimizedSuperTextWithSelectionState extends State<_RebuildOptimiz
   // non-trivial performance implications.
   int get _textLength => _cachedTextLength;
   late int _cachedTextLength;
+
   void _updateTextLength() {
     _cachedTextLength = widget.richText.toPlainText().length;
   }
@@ -188,8 +190,7 @@ class _RebuildOptimizedSuperTextWithSelectionState extends State<_RebuildOptimiz
   @override
   Widget build(BuildContext context) {
     if (_cachedSubtree != null) {
-      buildsLog.info(
-          "Building SuperTextWithSelection ($hashCode), returning cached subtree for optimized super text with selection");
+      buildsLog.info("Building SuperTextWithSelection ($hashCode), returning cached subtree for optimized super text with selection");
       return _cachedSubtree!;
     }
 
@@ -251,6 +252,7 @@ class _RebuildOptimizedSuperTextWithSelectionState extends State<_RebuildOptimiz
                   blinkCaret: userSelection.blinkCaret,
                   position: userSelection.selection.extent,
                   caretTracker: userSelection.caretFollower,
+                  textColor: Colors.black,
                 ),
           ],
         );

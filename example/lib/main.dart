@@ -188,7 +188,7 @@
 //           return Stack(
 //             children: [
 //
-//               TextLayoutCaret(
+//               TextLayoutCaret( textColor: Colors.blue,
 //                 textLayout: textLayout,
 //                 style: _primaryCaretStyle,
 //                 position: const TextPosition(offset: 21),
@@ -209,7 +209,7 @@
 //           return Stack(
 //             children: [
 //
-//               TextLayoutCaret(
+//               TextLayoutCaret( textColor: Colors.blue,
 //                 textLayout: textLayout,
 //                 style: _primaryCaretStyle,
 //                 position: const TextPosition(offset: 21),
@@ -241,7 +241,7 @@
 //           return Stack(
 //             children: [
 //               RainbowBuilder(builder: (context, color) {
-//                 return TextLayoutCaret(
+//                 return TextLayoutCaret( textColor: Colors.blue,
 //                   textLayout: textLayout,
 //                   style: _primaryCaretStyle.copyWith(color: color),
 //                   position: const TextPosition(offset: 21),
@@ -277,18 +277,18 @@
 //                 (context, textLayout) {
 //               return Stack(
 //                 children: [
-//                   TextLayoutCaret(
+//                   TextLayoutCaret( textColor: Colors.blue,
 //                     textLayout: textLayout,
 //                     style: _primaryCaretStyle,
 //                     position: const TextPosition(offset: 21),
 //                     textSize: 20, value: '',
 //                   ),
-//                   TextLayoutCaret(
+//                   TextLayoutCaret( textColor: Colors.blue,
 //                     textLayout: textLayout,
 //                     style: _johnCaretStyle,
 //                     position: const TextPosition(offset: 65), textSize: 20, value: '',
 //                   ),
-//                   TextLayoutCaret(
+//                   TextLayoutCaret( textColor: Colors.blue,
 //                     textLayout: textLayout,
 //                     style: _sallyCaretStyle,
 //                     position: const TextPosition(offset: 120),
@@ -500,37 +500,6 @@
 // );
 //
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import 'package:example/typing_robot.dart';
 import 'package:flutter/material.dart';
 import 'package:super_text_layout/super_text_layout.dart';
@@ -589,26 +558,23 @@ class _SuperTextExampleScreenState extends State<SuperTextExampleScreen> with Ti
             Expanded(
               child: SingleChildScrollView(
                 child: Center(
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 500),
-                    child: Stack(
-                      children: [
-                        const SizedBox(height: 48),
-                        // SuperText examples
-                        // _buildSubHeader("SuperText Widget"),
-                        // _buildDescription(
-                        //     "SuperText is a platform, upon which you can build various text experiences. A SuperText widget allows you to build an arbitrary UI beneath the text, and above the text."),
-                        // _buildCharacterRainbow(),
-                        _buildSingleCaret(),
+                  child: Stack(
+                    children: [
+                      const SizedBox(height: 48),
+                      // SuperText examples
+                      // _buildSubHeader("SuperText Widget"),
+                      // _buildDescription(
+                      //     "SuperText is a platform, upon which you can build various text experiences. A SuperText widget allows you to build an arbitrary UI beneath the text, and above the text."),
+                      // _buildCharacterRainbow(),
+                      _buildSingleCaret(),
 
-                        // _buildSingleSelectionHighlight(),
-                        // _buildSingleSelectionHighlightRainbow(),
-                        // _buildMultiUserSelections(),
-                        // _buildEmptySelection(),
+                      // _buildSingleSelectionHighlight(),
+                      // _buildSingleSelectionHighlightRainbow(),
+                      // _buildMultiUserSelections(),
+                      // _buildEmptySelection(),
 
-                        const SizedBox(height: 48),
-                      ],
-                    ),
+                      const SizedBox(height: 48),
+                    ],
                   ),
                 ),
               ),
@@ -751,6 +717,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
           return Stack(
             children: [
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -758,6 +725,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -765,6 +733,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -772,6 +741,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -779,6 +749,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -786,6 +757,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -793,6 +765,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -800,6 +773,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -807,6 +781,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -814,6 +789,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -821,6 +797,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -828,6 +805,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -835,6 +813,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -842,6 +821,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -849,6 +829,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -856,6 +837,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -863,6 +845,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -870,6 +853,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -877,6 +861,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -884,6 +869,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -891,6 +877,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -898,6 +885,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -905,6 +893,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -912,6 +901,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -919,6 +909,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -926,6 +917,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -933,6 +925,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -940,6 +933,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -947,6 +941,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -954,6 +949,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -961,6 +957,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -968,6 +965,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -975,6 +973,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -982,6 +981,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -989,6 +989,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -996,6 +997,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1003,6 +1005,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1010,6 +1013,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1017,6 +1021,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1024,6 +1029,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1031,6 +1037,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1038,6 +1045,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1045,6 +1053,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1052,6 +1061,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1059,6 +1069,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1066,6 +1077,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1073,6 +1085,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1080,6 +1093,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1087,6 +1101,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1094,6 +1109,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1101,6 +1117,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1108,6 +1125,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1115,6 +1133,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1122,6 +1141,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1129,6 +1149,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1136,6 +1157,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1143,6 +1165,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1150,6 +1173,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1157,6 +1181,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1164,6 +1189,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1171,6 +1197,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1178,6 +1205,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1185,6 +1213,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1192,6 +1221,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1199,6 +1229,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1206,6 +1237,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1213,6 +1245,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1220,6 +1253,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1227,6 +1261,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1234,6 +1269,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1241,6 +1277,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1248,6 +1285,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1255,6 +1293,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1262,6 +1301,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1269,6 +1309,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1276,6 +1317,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1283,6 +1325,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1290,6 +1333,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1297,6 +1341,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1304,6 +1349,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1311,6 +1357,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1318,6 +1365,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1325,6 +1373,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1332,6 +1381,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1339,6 +1389,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1346,6 +1397,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1353,6 +1405,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1360,6 +1413,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1367,6 +1421,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1374,6 +1429,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1381,6 +1437,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1388,6 +1445,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1395,6 +1453,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1402,6 +1461,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1409,6 +1469,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1416,6 +1477,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1423,6 +1485,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1430,6 +1493,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1437,6 +1501,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1444,6 +1509,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1451,6 +1517,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1458,6 +1525,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1465,6 +1533,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1472,6 +1541,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1479,6 +1549,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1486,6 +1557,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1493,6 +1565,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1500,6 +1573,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1507,6 +1581,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1514,6 +1589,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1521,6 +1597,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1528,6 +1605,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1535,6 +1613,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1542,6 +1621,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1549,6 +1629,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1556,6 +1637,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1563,6 +1645,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1570,6 +1653,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1577,6 +1661,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1584,6 +1669,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1591,6 +1677,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1598,6 +1685,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1605,6 +1693,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1612,6 +1701,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1619,6 +1709,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1626,6 +1717,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1633,6 +1725,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1640,6 +1733,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1647,6 +1741,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1654,6 +1749,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1661,6 +1757,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1668,6 +1765,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1675,6 +1773,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1682,6 +1781,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1689,6 +1789,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1696,6 +1797,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1703,6 +1805,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1710,6 +1813,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1717,6 +1821,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1724,6 +1829,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1731,6 +1837,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1738,6 +1845,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1745,6 +1853,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1752,6 +1861,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1759,6 +1869,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1766,6 +1877,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1773,6 +1885,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1780,6 +1893,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1787,6 +1901,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1794,6 +1909,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1801,6 +1917,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1808,6 +1925,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1815,6 +1933,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1822,6 +1941,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1829,6 +1949,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1836,6 +1957,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1843,6 +1965,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1850,6 +1973,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1857,6 +1981,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1864,6 +1989,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1871,6 +1997,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1878,6 +2005,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 2),
@@ -1885,6 +2013,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 4),
@@ -1892,6 +2021,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 7),
@@ -1899,6 +2029,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 12),
@@ -1906,6 +2037,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -1913,6 +2045,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 65),
@@ -1920,6 +2053,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 70),
@@ -1927,6 +2061,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 75),
@@ -1934,6 +2069,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 80),
@@ -1941,6 +2077,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 85),
@@ -1948,6 +2085,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 90),
@@ -1955,6 +2093,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 95),
@@ -1962,6 +2101,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 100),
@@ -1969,6 +2109,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 105),
@@ -1976,6 +2117,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 110),
@@ -1983,6 +2125,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -1990,6 +2133,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -1997,6 +2141,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2004,6 +2149,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2011,6 +2157,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2018,6 +2165,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2025,6 +2173,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2032,6 +2181,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2039,6 +2189,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2046,6 +2197,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2053,6 +2205,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 606),
@@ -2060,6 +2213,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2067,6 +2221,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2074,6 +2229,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2081,6 +2237,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2088,6 +2245,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2095,6 +2253,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2102,6 +2261,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2109,6 +2269,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2116,6 +2277,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2123,6 +2285,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2130,6 +2293,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
@@ -2137,24 +2301,22 @@ Although most paragraphs should have a topic sentence, there are a few situation
                 value: '${textSizeValue.toInt()}',
               ),
               TextLayoutCaret(
+                textColor: Colors.blue,
                 textLayout: textLayout,
                 style: _primaryCaretStyle,
                 position: TextPosition(offset: 60),
                 textSize: textSizeValue,
                 value: '${textSizeValue.toInt()}',
               ),
-
-
             ],
           );
         },
-        layerBeneathBuilder: (context , textLayout){
+        layerBeneathBuilder: (context, textLayout) {
           return TextLayoutSelectionHighlight(
             textLayout: textLayout,
             style: _primaryHighlightStyle,
             selection: const TextSelection(baseOffset: 60, extentOffset: 21),
           );
-
         },
       ),
     );
@@ -2167,7 +2329,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
   //       layerAboveBuilder: (context, textLayout) {
   //         return Stack(
   //           children: [
-  //             TextLayoutCaret(
+  //             TextLayoutCaret( textColor: Colors.blue,
   //               textLayout: textLayout,
   //               style: _primaryCaretStyle,
   //               position: const TextPosition(offset: 21),
@@ -2198,7 +2360,7 @@ Although most paragraphs should have a topic sentence, there are a few situation
   //         return Stack(
   //           children: [
   //             RainbowBuilder(builder: (context, color) {
-  //               return TextLayoutCaret(
+  //               return TextLayoutCaret( textColor: Colors.blue,
   //                 textLayout: textLayout,
   //                 style: _primaryCaretStyle.copyWith(color: color),
   //                 position: const TextPosition(offset: 21),
@@ -2233,17 +2395,17 @@ Although most paragraphs should have a topic sentence, there are a few situation
   //           (context, textLayout) {
   //             return Stack(
   //               children: [
-  //                 TextLayoutCaret(
+  //                 TextLayoutCaret( textColor: Colors.blue,
   //                   textLayout: textLayout,
   //                   style: _primaryCaretStyle,
   //                   position: const TextPosition(offset: 21),
   //                 ),
-  //                 TextLayoutCaret(
+  //                 TextLayoutCaret( textColor: Colors.blue,
   //                   textLayout: textLayout,
   //                   style: _johnCaretStyle,
   //                   position: const TextPosition(offset: 65),
   //                 ),
-  //                 TextLayoutCaret(
+  //                 TextLayoutCaret( textColor: Colors.blue,
   //                   textLayout: textLayout,
   //                   style: _sallyCaretStyle,
   //                   position: const TextPosition(offset: 120),

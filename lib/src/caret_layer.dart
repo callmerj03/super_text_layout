@@ -6,7 +6,7 @@ import 'infrastructure/blink_controller.dart';
 import 'text_layout.dart';
 
 class TextLayoutCaret extends StatefulWidget {
-  
+
   const TextLayoutCaret({
     Key? key,
     required this.textLayout,
@@ -16,6 +16,7 @@ class TextLayoutCaret extends StatefulWidget {
     required this.position,
     this.caretTracker,
     required this.textSize,
+    required this.textColor,
     required this.value,
   }) : super(key: key);
 
@@ -26,6 +27,7 @@ class TextLayoutCaret extends StatefulWidget {
   final TextPosition? position;
   final LayerLink? caretTracker;
   final double textSize;
+  final Color textColor;
   final String value;
 
   @override
@@ -102,7 +104,7 @@ class TextLayoutCaretState extends State<TextLayoutCaret> with TickerProviderSta
               offset: offset,
               height: (height! * 1),
               textSize: widget.textSize,
-              value: widget.value,
+              value: widget.value, textColor: widget.textColor,
             ),
           ),
         ),
@@ -127,11 +129,13 @@ class CaretPainter extends CustomPainter {
     required String value,
     required CaretStyle caretStyle,
     required double textSize,
+    required Color textColor,
     this.offset,
     required double? height,
   })  : _caretStyle = caretStyle,
         _height = height,
         _textSize = textSize,
+        _textColor = textColor,
         _value = value,
         super(repaint: blinkController);
 
@@ -142,6 +146,7 @@ class CaretPainter extends CustomPainter {
   final Offset? offset;
   final double? _height;
   final double? _textSize;
+  final Color? _textColor;
   final String _value;
 
   @override
@@ -150,7 +155,7 @@ class CaretPainter extends CustomPainter {
       return;
     }
 
-    final textStyle = ui.TextStyle(color: Colors.red, fontSize: _textSize, fontWeight: FontWeight.bold);
+    final textStyle = ui.TextStyle(color: _textColor, fontSize: _textSize, fontWeight: FontWeight.bold);
     final paragraphStyle = ui.ParagraphStyle(
       textDirection: TextDirection.ltr,
     );
